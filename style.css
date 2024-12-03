@@ -1,0 +1,754 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-family: Arial, sans-serif;
+
+
+}
+
+body{
+    /* background-image: url(https://pdp.uz/static/media/temp_header_bg.0abc43dc5fb6197a7c1f.png); */
+    background-repeat: no-repeat;
+     background-size: cover ;
+     background-position: center;
+}
+.navbar {
+     display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 40px;
+    padding: 1rem 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    background-color: #c1c1c129;
+  
+}
+
+/* Scroll bo'lganda qo'shiladigan class */
+.navbar.scrolled {
+    background-color: white;
+ }
+
+.navbar.scrolled {
+    background-color: white;
+ }
+
+.navbar.scrolled a {
+    color: black;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Scroll bo'lganda logo rangini o'zgartirish */
+.navbar.scrolled .logo {
+    color: #333;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* Scroll bo'lganda link ranglarini o'zgartirish */
+.navbar.scrolled .nav-links a {
+    color: #333;
+}
+
+.phone-number {
+    background-color: #00cc00;
+    color: white !important;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 420px;
+}
+
+.phone-number:hover {
+    background-color: #00b300;
+}
+
+
+
+
+.homePage{
+     background-image: url(https://pdp.uz/static/media/temp_header_bg.0abc43dc5fb6197a7c1f.png);
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.home{
+    width: 1536px;
+}
+.orta{
+    position: relative;
+    top: 450px;
+    width: 1512px;
+}
+
+
+
+/* Nima uchun PDP page */
+.why-pdp {
+    padding: 5rem 5%;
+    background: white;
+    
+}
+
+.why-pdp h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.why-pdp-description {
+    max-width: 800px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 4rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    position: relative;
+}
+
+.feature-card {
+    background: #f8f8f8;
+    padding: 2rem;
+    border-radius: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background: #e6ffe6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.feature-icon svg {
+    width: 30px;
+    height: 30px;
+    color: #00cc00;
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.feature-description {
+    color: #666;
+    line-height: 1.5;
+}
+
+.yellow-shape {
+    position: absolute;
+    background: #FFD700;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.shape-1 {
+    left: -100px;
+    bottom: -50px;
+}
+
+.shape-2 {
+    right: 30%;
+    top: 20%;
+}
+
+
+
+
+/* Founder */
+.container {
+    /* max-width: 1700px; */
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    background-color: #012c5e;
+  }
+
+.founder-image {
+    position: relative;
+    flex: 1;
+}
+
+.green-circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #00ff00;
+    border-radius: 50%;
+    top: -20px;
+    left: -20px;
+    z-index: 1;
+    left:40px ;
+}
+
+.main-image {
+    /* width: 100%; */
+    max-width: 400px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    left: 110px;
+}
+
+.content {
+    flex: 1;
+    padding: 2rem;
+}
+
+.founder-title {
+    color: #ffd700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.quote {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.academy-info {
+    margin-bottom: 2rem;
+}
+
+.founder-name {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+
+.brands {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.brand-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.8rem;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+
+/* PDP Tarixi */
+.wrapper {
+    /* max-width: 1700px; */
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+    gap: 70px;
+ }
+
+.title__block {
+    display: flex;
+    flex-direction: column;
+     gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.title__main {
+    color: #00c853;
+    font-size: 20px;
+}
+
+.title__sub {
+    color: #00c853;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.content__block {
+    display: flex;
+    flex-direction: column;
+ }
+
+.description__text {
+     max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #0e0e0e;
+    position: relative;
+    right: 125px;
+}
+
+.timeline__wrapper {
+    display: flex;
+    justify-content: center;
+     position: relative;
+    padding: 2rem 0;
+}
+
+.timeline__line {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: #ffd700;
+}
+
+.timeline__years {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    z-index: 1;
+ }
+
+.year__item {
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+    border-radius: 50%;
+    background: #ffd700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.year__item--active {
+    background: #00c853;
+    transform: scale(1.1);
+}
+
+.image__block {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.image__block img {
+    /* width: 100%; */
+    height: auto;
+    display: block;
+}
+
+
+/* Contact */
+.contact {
+    min-height: 150px;
+    background: #1E293B;
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.contact__title {
+    color: #FFD700;
+    font-size: clamp(2rem, 5vw, 3rem);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contact__subtitle {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 3rem;
+    opacity: 0.8;
+}
+
+.contact__form {
+    /* width: 100%; */
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form__label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.form__input {
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+}
+
+.form__input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.form__button {
+    display: flex;
+    justify-self: center;
+    position: relative;
+    left: 130px;
+    background: #00C853;
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.form__button:hover {
+    background: #00A347;
+}
+
+
+
+/* Card */
+.card {
+    max-width: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background: rgb(222, 221, 221);
+    margin: 40px 0;
+}
+
+.card__image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card__content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 210px;
+}
+
+.card__title {
+    font-size: 2rem;
+    color: #1E293B;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card__description {
+    color: #64748B;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.card__button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #00C853;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    width: fit-content;
+    transition: 0.3s ease;
+}
+
+.card__button:hover {
+    background: #00A347;
+}
+
+.card__button::after {
+    content: "→";
+    transition: 0.3s ease;
+}
+
+.card__button:hover::after {
+    transform: translateX(5px);
+}
+
+
+
+.bigCard{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: white;
+}
+.veryBigCard{
+    background-color: white;
+}
+
+
+
+/* Prizident Qarori */
+.quotel {
+     max-width: 1700px;
+    /* margin: 2rem auto; */
+    background-color: rgb(229, 226, 226);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.quote__image-container {
+    position: relative;
+}
+
+.quote__circle {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    background: #FFD700;
+        z-index: -1;
+}
+
+.quote__image {
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.quote__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.quote__label {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.quote__title {
+    color: #00C853;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.quote__text {
+    color: #333;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.quote__author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.author__image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.author__details {
+    display: flex;
+    flex-direction: column;
+}
+
+.author__label {
+    color: #666;
+    font-size: 0.8rem;
+}
+
+.author__name {
+    color: #1E293B;
+    font-weight: 500;
+}
+
+/* LastInformation */
+
+.information{
+    display: flex;
+    background-color: white;
+    padding-top: 50px
+}
+ 
+
+.lastInformation {
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+}
+
+ 
+
+.main-title {
+    color: #00ff00;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.main-description {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+}
+
+.vision-mission-container {
+    display: grid;
+    gap: 20px;
+}
+
+.section {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+ }
+
+.icon {
+    width: 48px;
+    height: 48px;
+    background: #ffcc00;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    flex: 1;
+}
+
+.section-title {
+    color: #2af35f;
+    font-size: 1rem;
+ }
+
+.section-description {
+    color: #333;
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+
+
+/* Footer */
+
+.footer {
+    background: linear-gradient(to right, #1a237e, #0d1333);
+    padding: 2rem 4rem;
+    color: white;
+}
+
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    height: 40px;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background: #00e676;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.button {
+    background: #00e676;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
